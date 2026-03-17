@@ -375,6 +375,45 @@ a {
   line-height: 1.6;
 }
 
+.lottie-wrap {
+  width: 100%;
+  height: 190px;
+  margin-bottom: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.lottie-inner {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lottie-inner lottie-player {
+  width: 100%;
+  height: 100%;
+}
+
+/* Per-animation visual normalization */
+.lottie-move .lottie-inner {
+  width: 115px;
+  height: 115px;
+}
+
+.lottie-earn .lottie-inner {
+  width: 165px;
+  height: 165px;
+}
+
+.lottie-unlock .lottie-inner {
+  width: 155px;
+  height: 155px;
+}
+
 @media (max-width: 920px) {
   .section-grid,
   .steps-onboarding {
@@ -423,35 +462,21 @@ a {
   }
 
  .lottie-wrap {
-  width: 100%;
   height: 160px;
-  margin-bottom: 18px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  overflow: hidden;
 }
 
-.lottie-wrap lottie-player {
-  width: 160px;
-  height: 160px;
-
-  object-fit: contain;
+.lottie-move .lottie-inner {
+  width: 105px;
+  height: 105px;
 }
 
-  .lottie-inner {
-  width: 140px;
-  height: 140px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.lottie-earn .lottie-inner {
+  width: 145px;
+  height: 145px;
 }
 
-.lottie-inner lottie-player {
-  width: 100%;
-  height: 100%;
+.lottie-unlock .lottie-inner {
+  width: 135px;
+  height: 135px;
 }
 }

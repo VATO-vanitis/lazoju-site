@@ -397,17 +397,17 @@ a {
     font-size: 16px;
   }
 
-  .lottie-wrap {
+ .lottie-wrap {
   width: 100%;
-  height: 140px;
-  margin-bottom: 16px;
+  height: 160px;
+  margin-bottom: 18px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .lottie-wrap lottie-player {
-  width: 140px;
-  height: 140px;
+  width: 120px;
+  height: 120px;
 }
 }

@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>LAZOJU — Move → Earn → Unlock</title>
   <meta
     name="description"
-    content="LAZOJU helps you turn movement into screen time. Build discipline, reduce distractions, and unlock your apps with intention."
+    content="LAZOJU helps you turn movement into screen time. Move more, earn time, and unlock your apps with intention."
   />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -29,161 +30,141 @@
         </a>
 
         <nav class="nav">
-          <a href="index.html">Home</a>
+          <a href="index.html" class="active">Home</a>
           <a href="privacy.html">Privacy</a>
         </nav>
       </div>
     </header>
 
     <main class="container">
-      <section class="hero-card">
-        <div class="hero-copy">
-          <div class="pill">Movement-first screen time</div>
-          <h1>Move → Earn → Unlock</h1>
-          <p class="hero-text">
-            LAZOJU helps people build healthier digital habits by turning
-            movement into intentional screen time. Move your body, earn time,
-            and unlock distracting apps with purpose.
-          </p>
+      <section class="hero-card hero-centered">
+        <div class="pill">Movement-first screen time</div>
+        <h1>Welcome to LAZOJU</h1>
+        <p class="hero-tagline">Move → Earn → Unlock</p>
+        <p class="hero-text hero-narrow">
+          LAZOJU helps you create a stronger relationship with movement,
+          discipline, and screen time. Move your body, earn your time, and use
+          your apps more intentionally.
+        </p>
 
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="privacy.html">Read Privacy Policy</a>
-            <a class="btn btn-secondary" href="#how-it-works">How it works</a>
-          </div>
-        </div>
-
-        <div class="hero-visual">
-          <div class="gradient-panel">
-            <div class="gradient-panel-inner">
-              <div class="stat-label">Today’s Formula</div>
-              <div class="stat-value">100 steps = 1 min</div>
-              <div class="stat-subtitle">Move a little now, unlock more later.</div>
-            </div>
-          </div>
+        <div class="store-buttons">
+          <button class="store-btn" onclick="openComingSoon('Google Play')">
+            Google Play
+          </button>
+          <button class="store-btn secondary" onclick="openComingSoon('App Store')">
+            App Store
+          </button>
         </div>
       </section>
 
-      <section id="how-it-works" class="section-grid">
-        <article class="card">
-          <h2>How LAZOJU works</h2>
-          <p>
-            LAZOJU connects movement with app access. The more you move, the more
-            intentional screen time you can unlock. This helps reduce passive
-            scrolling and encourages healthy routines.
-          </p>
-        </article>
+      <section class="steps steps-onboarding">
+  
+  <div class="card step-card">
+    <div class="lottie-wrap">
+      <lottie-player
+        src="assets/animations/move.json"
+        background="transparent"
+        speed="1"
+        loop
+        autoplay>
+      </lottie-player>
+    </div>
+    <h3>Move</h3>
+    <p>
+      Walk, run, or stay active. Every step builds your daily progress and unlock potential.
+    </p>
+  </div>
 
-        <article class="card">
-          <h2>Built for real life</h2>
-          <p>
-            LAZOJU is designed for general wellbeing, focus, self-discipline,
-            families, and users who want more control over distracting apps
-            without losing flexibility.
-          </p>
-        </article>
-      </section>
+  <div class="card step-card">
+    <div class="lottie-wrap">
+      <lottie-player
+        src="assets/animations/earn.json"
+        background="transparent"
+        speed="1"
+        loop
+        autoplay>
+      </lottie-player>
+    </div>
+    <h3>Get Time</h3>
+    <p>
+      Your movement becomes valuable. LAZOJU converts it into screen time you can actually use.
+    </p>
+  </div>
 
-      <section class="steps">
-        <div class="card step-card">
-          <div class="step-number">01</div>
-          <h3>Move</h3>
-          <p>
-            Walk, run, or stay active. Your movement is the starting point of
-            your daily unlock potential.
-          </p>
-        </div>
+  <div class="card step-card">
+    <div class="lottie-wrap">
+      <lottie-player
+        src="assets/animations/unlock.json"
+        background="transparent"
+        speed="1"
+        loop
+        autoplay>
+      </lottie-player>
+    </div>
+    <h3>Unlock</h3>
+    <p>
+      Use your earned time intentionally. Access apps with awareness instead of habit.
+    </p>
+  </div>
 
-        <div class="card step-card">
-          <div class="step-number">02</div>
-          <h3>Earn</h3>
-          <p>
-            LAZOJU converts movement progress into screen-time value based on the
-            formula configured for your account.
-          </p>
-        </div>
-
-        <div class="card step-card">
-          <div class="step-number">03</div>
-          <h3>Unlock</h3>
-          <p>
-            Use your earned minutes to access selected apps with more awareness
-            and less mindless overuse.
-          </p>
-        </div>
-      </section>
+</section>
 
       <section class="section-grid">
-        <article class="card">
-          <h2>Kids Mode</h2>
+        <article class="card plan-card free-card">
+          <div class="plan-pill">Free</div>
+          <h2>Start strong</h2>
           <p>
-            Kids Mode can help parents protect sensitive actions with a parent
-            PIN, making the experience safer for family use.
+            The free version is perfect to begin your LAZOJU journey. Build
+            your first movement habits, control selected apps, and experience
+            the power of earning your time.
           </p>
         </article>
 
-        <article class="card">
-          <h2>Free & Pro</h2>
+        <article class="card plan-card pro-card">
+          <div class="plan-pill pro">Pro</div>
+          <h2>Go deeper</h2>
           <p>
-            LAZOJU offers a free experience for getting started and a Pro version
-            for users who want more flexibility, more controls, and advanced
-            customization.
+            Pro gives you more flexibility, more restricted apps, and more
+            advanced control over your personal formula, limits, and movement
+            rules.
           </p>
         </article>
       </section>
 
-      <section class="card legal-card">
-        <h2>Why LAZOJU needs Android permissions</h2>
+      <section class="card story-card">
+        <h2>Who LAZOJU is made for</h2>
         <p>
-          LAZOJU uses a few Android permissions only to deliver its core
-          experience of movement-based screen-time control. We aim to explain
-          them as clearly and simply as possible.
+          LAZOJU is for people who want more control, more focus, and a better
+          daily rhythm. It is for adults who want to reduce distractions, for
+          ambitious people who value discipline, for movement-conscious users,
+          and for families who want a smarter and safer digital routine.
         </p>
-
-        <h3>Accessibility Service</h3>
         <p>
-          This helps LAZOJU recognize when a user-selected restricted app is
-          opened, so the blocker or warning flow can appear at the right moment.
-        </p>
-
-        <h3>Usage Access</h3>
-        <p>
-          This helps LAZOJU understand app usage timing needed for the wallet,
-          unlock logic, and restricted-app handling.
-        </p>
-
-        <h3>Overlay Permission</h3>
-        <p>
-          This allows LAZOJU to display its blocker or warning screen above a
-          restricted app when available time is used up or limits are reached.
-        </p>
-
-        <p>
-          These permissions are used to make LAZOJU work as intended and are not
-          requested for unrelated hidden tracking.
+          Whether you want to scroll less, move more, protect your children, or
+          simply feel better about how you use your time, LAZOJU is built to
+          support that journey in a personal and motivating way.
         </p>
       </section>
 
-      <section class="card footer-cta">
-        <h2>Join the LAZOJU launch</h2>
+      <section class="card quote-card">
+        <h2>Your time feels different when you earn it.</h2>
         <p>
-          LAZOJU is preparing for launch on Google Play. Follow the journey and
-          contact us if you want to be part of the first launch wave.
+          LAZOJU is more than screen-time control. It is a daily reminder that
+          movement creates momentum, discipline creates freedom, and small steps
+          can change the whole direction of your day.
         </p>
-        <div class="footer-links">
-          <a class="btn btn-primary" href="mailto:office@vanitis.com">Join the Launch</a>
-          <a class="btn btn-secondary" href="privacy.html">Privacy Policy</a>
+
+        <div class="store-buttons second-cta">
+          <button class="store-btn" onclick="openComingSoon('Google Play')">
+            Google Play
+          </button>
+          <button class="store-btn secondary" onclick="openComingSoon('App Store')">
+            App Store
+          </button>
         </div>
-      </section>
 
-      <section class="card footer-cta">
-        <h2>Launch-ready. Habit-first. Built for intentional use.</h2>
-        <p>
-          LAZOJU is focused on helping users create a better relationship with
-          movement, focus, and screen time.
-        </p>
-        <div class="footer-links">
-          <a class="btn btn-primary" href="privacy.html">Privacy Policy</a>
-          <a class="btn btn-secondary" href="mailto:office@vanitis.com">Contact Support</a>
+        <div class="privacy-link-wrap">
+          <a href="privacy.html" class="text-link">Read Privacy Policy</a>
         </div>
       </section>
     </main>
@@ -199,5 +180,30 @@
       </div>
     </footer>
   </div>
+
+  <div id="comingSoonModal" class="modal-overlay" onclick="closeComingSoon(event)">
+    <div class="modal-card">
+      <div class="modal-pill">Coming soon</div>
+      <h3 id="modalTitle">Download coming soon</h3>
+      <p>
+        LAZOJU is preparing for launch. The store link for this platform will be
+        added here soon.
+      </p>
+      <button class="store-btn modal-btn" onclick="closeComingSoon()">Close</button>
+    </div>
+  </div>
+
+  <script>
+    function openComingSoon(storeName) {
+      document.getElementById('modalTitle').innerText = storeName + ' download coming soon';
+      document.getElementById('comingSoonModal').classList.add('show');
+    }
+
+    function closeComingSoon(event) {
+      if (!event || event.target.id === 'comingSoonModal' || event.type !== 'click') {
+        document.getElementById('comingSoonModal').classList.remove('show');
+      }
+    }
+  </script>
 </body>
 </html>

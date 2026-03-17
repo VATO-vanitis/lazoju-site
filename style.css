@@ -440,4 +440,18 @@ a {
 
   object-fit: contain;
 }
+
+  .lottie-inner {
+  width: 140px;
+  height: 140px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lottie-inner lottie-player {
+  width: 100%;
+  height: 100%;
+}
 }

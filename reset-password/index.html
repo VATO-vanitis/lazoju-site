@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reset Password – LAZOJU</title>
+
+  <!-- LAZOJU Style -->
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(180deg, #0AC4E0 0%, #C9BEFF 100%);
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #111;
+    }
+
+    .container {
+      background: white;
+      padding: 32px;
+      border-radius: 20px;
+      width: 90%;
+      max-width: 420px;
+      text-align: center;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    }
+
+    .logo {
+      font-weight: 700;
+      font-size: 22px;
+      margin-bottom: 20px;
+      letter-spacing: 1px;
+    }
+
+    .title {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 25px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 20px;
+      border-radius: 12px;
+      background: #0AC4E0;
+      color: white;
+      font-weight: 600;
+      text-decoration: none;
+      transition: 0.2s;
+    }
+
+    .btn:hover {
+      opacity: 0.9;
+    }
+
+    .fallback {
+      margin-top: 20px;
+      font-size: 12px;
+      color: #888;
+    }
+
+    .loader {
+      margin: 20px auto;
+      width: 30px;
+      height: 30px;
+      border: 3px solid #eee;
+      border-top: 3px solid #0AC4E0;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="logo">LAZOJU</div>
+
+    <div class="title">Reset your password</div>
+    <div class="subtitle">We are securely opening the app…</div>
+
+    <div class="loader"></div>
+
+    <a id="openAppBtn" class="btn" href="#">
+      Open LAZOJU App
+    </a>
+
+    <div class="fallback">
+      If nothing happens, tap the button above.
+    </div>
+  </div>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const token = params.get("token");
+
+    if (!token) {
+      document.querySelector(".title").innerText = "Invalid link";
+      document.querySelector(".subtitle").innerText = "Missing reset token.";
+    }
+
+    const deepLink = `lazoju://reset-password?token=${token}`;
+
+    const openAppBtn = document.getElementById("openAppBtn");
+    openAppBtn.href = deepLink;
+
+    // Auto open app
+    setTimeout(() => {
+      window.location.href = deepLink;
+    }, 500);
+
+    // Fallback: if app not installed
+    setTimeout(() => {
+      document.querySelector(".subtitle").innerText =
+        "If the app did not open, tap below.";
+    }, 2500);
+  </script>
+
+</body>
+</html>
